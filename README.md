@@ -1,36 +1,118 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🧩 Miro Clone – Real-Time Collaborative Whiteboard
 
-## Getting Started
+A modern, full-stack Miro clone that enables real-time collaborative whiteboarding. Built with Next.js and powered by Liveblocks and Convex, this application offers seamless collaboration, secure authentication, and a responsive user interface.
 
-First, run the development server:
+🔗 **Live Demo:** [https://miro-app-psi.vercel.app](https://miro-app-psi.vercel.app)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Real-Time Collaboration:** Multiple users can interact on the same board simultaneously.
+- **Interactive Whiteboard:** Draw, add shapes, and annotate in a shared space.
+- **User Authentication:** Secure sign-in using Clerk's authentication system.
+- **Responsive Design:** Optimized for both desktop and mobile devices.
+- **Server-Side Rendering:** Enhanced performance and SEO with Next.js SSR.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+---
 
-## Learn More
+## 🛠️ Tech Stack
 
-To learn more about Next.js, take a look at the following resources:
+**Frontend:**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Next.js
+- TypeScript
+- Tailwind CSS
+- ShadCN UI
+- Liveblocks (Real-time collaboration)([Miro Developer Platform][5], [GitHub][6], [Stack by Convex][7], [React Projects Collection][8])
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+**Backend:**
 
-## Deploy on Vercel
+- Convex (Real-time database)
+- Server-Side Rendering with Next.js
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**Authentication:**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Clerk (OAuth-based authentication)
+
+**Deployment:**
+
+- Vercel
+
+---
+
+## 📸 Screenshots
+
+### Miro Home
+
+![User Authentication](images/miro-home.png)
+
+### Collaborative Whiteboard
+
+![Collaborative Whiteboard](images/miro-page.png)
+
+---
+
+## 🧰 Getting Started
+
+### Prerequisites
+
+- Node.js (v18 or higher)
+- npm or yarn
+- Clerk account for authentication
+- Convex account for the database
+
+### Installation
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/Hitesh-s0lanki/miro-app.git
+   cd miro-app
+   ```
+
+2. **Install dependencies:**
+
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+3. **Set up environment variables:**
+
+   - Create a `.env.local` file in the root directory.
+   - Refer to `.env.example` for the required environment variables.
+
+4. **Run the development server:**
+
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+
+   Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+---
+
+## ☁️ Deployment
+
+The application is deployed on [Vercel](https://vercel.com), offering seamless integration with GitHub for continuous deployment. Every push to the `main` branch triggers an automatic deployment.
+
+---
+
+## 🔮 Future Enhancements
+
+- **Enhanced Drawing Tools:** Add more shapes, colors, and line styles.
+- **Board Export:** Allow users to export boards as images or PDFs.
+- **Chat Integration:** Implement a chat feature for better communication.
+- **Access Controls:** Introduce roles and permissions for board access.
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Please fork the repository and submit a pull request for any enhancements or bug fixes. For major changes, please open an issue first to discuss what you would like to change.
+
+---
